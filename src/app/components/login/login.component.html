@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <div class="form-signin">
+    <br>
+    <div class="text-center">
+      <h3>Parte 1: App Web</h3>
+      <p>by Luis Iván Espín Velsco</p>
+      <strong>ev.ivanluis16@gmail.com</strong>
+    </div>
+    <br>
+    <div class="card">
+      <div class="card-header">
+        Bienvenido
+      </div>
+      <div class="card-body">
+        <form [formGroup]="formLogin" (ngSubmit)="login()">
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control form-control-sm" formControlName="email" id="emial" placeholder="Ingrese su email.">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control form-control-sm" formControlName="password" id="password" placeholder="Ingrese su contraseña.">
+          </div>
+          <button type="submit" class="btn btn-outline-success btn-sm btn-block">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            Entrar</button>
+        </form>
+        <br>
+        <ngb-alert *ngIf="alert.show" [type]="alert.type" (close)="alert.show = false">{{alert.message}}</ngb-alert>
+      </div>
+    </div>
+  </div>
+</div>
