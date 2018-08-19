@@ -20,5 +20,9 @@ Para desplegar la aplicacion ejecute los siguientes pasos:
 Abrir el navegador en la direccion: http://127.0.0.1:3000
 <br>
 <br>
+user: testapis@tuten.cl
+pass: 1234
+<br>
+<br>
 <h2>Para acceso rapido dar clic en el siguiente link:</h2>
 <h3>https://parte-uno-luis-espin.herokuapp.com</h3>
